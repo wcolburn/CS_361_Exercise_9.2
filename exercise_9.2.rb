@@ -83,7 +83,7 @@ class Go
 end
 
 
-class PlayGames
+class PlayGame
 
   def initialize(game)
     @game = game
@@ -97,13 +97,13 @@ class PlayGames
 end
 
 game = Poker.new(["alice", "bob", "chris", "dave"])
-pg = PlayGames.new(game)
+pg = PlayGame.new(game)
 pg.play()
 puts
 game = Chess.new([["alice", "white"], ["bob", "black"]])
-pg = PlayGames.new(game)
+pg = PlayGame.new(game)
 pg.play()
 puts
 game = Go.new([["alice", "white"], ["bob", "black"]])
-pg = PlayGames.new(game)
+pg = PlayGame.new(game)
 pg.play()
